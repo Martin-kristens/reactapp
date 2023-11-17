@@ -1,0 +1,108 @@
+.advices {
+    margin-bottom: 20px;
+    
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    
+    .advice-boxes {
+      text-decoration: none;
+      color: #191919;
+      transition: background-color 200ms ease-in-out;
+      cursor: pointer;
+      background-color: #FFFFFF;
+      
+      @media (min-width: 768px) {
+        border-bottom: none;
+      }
+
+      @media (min-width: 1200px) {
+        padding: 50px 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &:hover {
+        background-color: #F9D783;
+      }
+
+      &:hover .arrow-bellow-text i {
+        background-color: #FFFFFF;
+        color: #191919;
+        transition: background-color 200ms ease-in-out;
+      }
+
+      .top-line {
+        display: none;
+
+        @media (min-width: 768px) {
+          display: flex;
+          border: 1px solid #191919;
+          width: 15%;
+          margin: 30px 0 20px 10px;
+        }
+      }
+
+      .advice-boxes-text {
+        padding: 10px;
+        
+        h3 {
+          font-size: 2rem;
+          margin-top: 10px;
+          font-weight: 700;
+          font-family: 'DM Sans', sans-serif;
+        }
+        p {
+          font-size: 1.2rem;
+          text-align: left;
+        }
+
+        @media (min-width: 768px) {
+          h3 {
+            font-size: 1.8rem;
+            text-align: left;
+          }
+        }
+        @media (min-width: 1200px) {
+          h3 {
+            font-size: 2.2rem;
+          }
+        }
+      }
+
+      .arrow-bellow-text {
+        margin-left: -140px;
+        text-align: right;
+        margin-right: 100px;
+        // border-bottom: 1px solid #191919;
+
+        @media (min-width: 768px) {
+          border-bottom: none;
+          margin-left: 80%;
+        }
+
+          i {
+            padding: 10px;
+            margin-bottom: 1.5rem;
+            margin-right: 0rem;
+            border-radius: 50%;
+            background-color: #191919;
+            color: #FFFFFF;
+            font-size: 0.8rem;
+
+            @media (min-width: 768px) {
+              padding: 15px;
+              border-bottom: none;
+            }
+            
+
+            @media (min-width: 1200px) {
+              font-size: 1.5rem;
+              padding: 20px;
+            }
+          }
+      }
+    }
+  }

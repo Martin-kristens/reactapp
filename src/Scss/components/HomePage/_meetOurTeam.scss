@@ -1,0 +1,93 @@
+.meet-our-team {
+    background-color: #F9D783;
+    width: 100%;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+  
+      .top-row {
+
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .section-title {
+          text-align: center;
+  
+          @media (min-width: 768px) {
+            text-align: left;
+            
+            p {
+              font-size: 1.5rem;
+            }
+            
+            h2 {
+              font-family: 'DM Sans', sans-serif;
+              font-weight: 700;
+              font-size: 3.5rem;
+            }
+          }
+        }
+  
+        .center-content {
+          margin-bottom: 20px;
+  
+          a {
+            margin-right: 0px;
+            display: block;
+            margin-bottom: 20px;
+    
+            @media (min-width: 768px) {
+              display: inline-block;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+  
+      .bottom-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+  
+        .staff {
+          text-align: center;
+  
+          @media (min-width: 768px) {
+            text-align: left;
+          }
+          
+          img {
+            object-fit: scale-down;
+            width: 80%;
+          }
+  
+          h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 2.0rem;
+            margin-top: 10px;
+          }
+  
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+  
+      .center-content {
+        margin: 20px 0 30px;
+        text-align: center;
+      }
+    }
+  }

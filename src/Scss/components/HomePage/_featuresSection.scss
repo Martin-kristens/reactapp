@@ -1,0 +1,142 @@
+.features {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 20px;
+      }
+  
+      .section-title {
+        text-align: center;
+  
+        @media (min-width: 768px) {
+          text-align: left;
+          margin-left: 20px;
+          max-width: 400px;
+        }
+  
+        @media (min-width: 1200px) {
+          max-width: 600px;
+        }
+  
+        a {
+          margin-right: 0px;
+          display: block;
+          margin-bottom: 20px;
+          margin-top: 20px;
+  
+          @media (min-width: 768px) {
+            display: inline-block;
+            margin-right: 10px;
+          }
+          @media (min-width: 1200px) {
+            width: 100%;
+          }
+        }      
+      }   
+  
+       .business-advice {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        @media (min-width: 768px) {
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+
+        @media (min-width: 1200px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-top: 70px;
+          margin-bottom: 50px;
+          margin-left: 200px;
+          // column-gap: 100px;
+        }
+  
+          .business {
+            position: relative;
+            margin-bottom: 10px;
+  
+            .plus-sign1 {
+              position: absolute;
+              top: -2em;
+              left: 144px;
+              opacity: 0.5;
+
+              @media (min-width: 768px) {
+                left: 130px;
+              }
+
+              @media (min-width: 992px) {
+                left: 143px;
+              }
+
+              @media (min-width: 1200px) {
+                left: 46px;
+                top: -23px;
+              }
+            }
+            .plus-sign2 {
+              position: absolute;
+              top: -1.2em;
+              left: 170px;
+              opacity: 0.5;
+
+              @media (min-width: 768px) {
+                left: 155px;
+              }
+
+              @media (min-width: 992px) {
+                left: 173px;
+              }
+
+              @media (min-width: 1200px) {
+                left: 75px;
+                top: -11px;
+              }
+            }
+            .plus-sign3 {
+              position: absolute;
+              top: 0.9em;
+              left: 185px;
+              opacity: 0.5;
+
+              @media (min-width: 768px) {
+                left: 170px;
+              }
+
+              @media (min-width: 992px) {
+                left: 187px;
+              }
+
+              @media (min-width: 1200px) {
+                left: 83px;
+                top: 7px;
+              }
+            }          
+  
+            img {
+              margin-bottom: 10px;
+            }
+  
+            h3 {
+              font-family: 'DM Sans', sans-serif;
+              font-weight: 700;
+              font-size: 2rem;
+            }
+  
+            p {
+              font-size: 1.2rem; 
+              // max-width: 2.5rem;           
+            }
+          }
+       }
+    }
+  }
+

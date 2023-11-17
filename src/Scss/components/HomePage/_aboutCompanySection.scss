@@ -1,0 +1,154 @@
+.about-section {
+ 
+    .container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .women-image {
+
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;        
+                }
+
+            .pic-text {
+
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                padding: 0 30px;
+                background-color: #BEEBFF;
+                object-fit: scale-down;
+
+                @media (min-width: 768px) {
+                    position: absolute;
+                    bottom: 20px;
+                    left: -30px;
+                  }
+        
+                @media (min-width: 1200px) {
+                    width: 60%;
+                    // padding: 30px 20px 30px 20px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -30px;
+                }
+
+                h5 {
+                    font-size: 1.2rem;
+                    padding-top: 15px;
+
+                    @media (min-width: 768px) {
+                        font-size: 1.8rem;
+                      }
+                }  
+                
+                p {
+                    font-size: 0.9rem;
+                    max-width: 20rem;
+                    font-weight: 500;
+                    font-style: italic;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            span {
+                font-size: 1.4rem;
+                color: #191919;
+            }
+
+            @media (min-width: 768px) {
+                // text-align: left;
+                margin-left: 40px;
+                
+                p {
+                  margin-bottom: 40px;
+                }
+              }
+
+              @media (min-width: 992px) {
+                text-align: left;
+              }
+      
+              @media (min-width: 1200px) {
+                max-width: 480px;
+                // margin-left: 200px;
+      
+                h2 {
+                  max-width: 400px;
+                  margin-bottom: 50px;
+                }
+              }
+
+            .right-content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 10px;
+
+                a {
+                    margin-right: 0px;
+                    display: block;
+                    margin-bottom: 20px;
+                    border-radius: 55px;
+      
+                    i {
+                      font-size: 1.5rem;
+                      border: none;
+                      background-color: transparent;
+                    }
+                  }
+
+                .circle-play {
+
+                    i {
+                        padding: 20px;
+                        border: 1px solid black;
+                        background-color: #FFFFFF;
+                        border-radius: 50%;
+                        transition: background-color 200ms ease-in-out;
+                        color: #191919;
+                    }
+
+                    p {
+                        color: #191919;
+                        margin-top: 50px;
+                    }
+
+                    &:hover i {
+                        background-color: #191919;
+                        border: 1px solid #191919;
+                        color: #F0EFE9;
+        
+                        i {
+                          color: #FFFFFF;
+                        }
+                      }
+
+                }
+
+                p {
+                    color: #191919;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

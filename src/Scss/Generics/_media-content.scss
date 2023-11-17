@@ -1,0 +1,133 @@
+
+// Variabler som används på flera ställen
+$base-color: #000;
+$article-text-color: #191919;
+$small-screen-width: 768px;
+$medium-screen-width: 992px;
+$large-screen-width: 1200px;
+
+// Mixin för gemensamma stilar för bilder då jag har flera olika så det inte blir repetativt
+@mixin image-styles {
+  object-fit: scale-down;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: #{$small-screen-width}) {
+    object-fit: cover;
+    width: 80%;
+    height: 40%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: #{$medium-screen-width}) {
+    width: 90%;
+  }
+}
+
+// Mixin för gemensamma textstilar
+@mixin text-styles {
+  font-size: 1.2em;
+  max-width: 90%;
+  margin-top: 2%;
+
+  @media (min-width: #{$small-screen-width}) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    margin-left: 0;
+  }
+
+  @media (min-width: #{$medium-screen-width}) {
+    max-width: 90%;
+  }
+}
+
+// Gemensamma stilar för .business-info och .article-item 
+// all text under bilderna stylas här
+.business-info {
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    text-align: left;
+    max-width: 100%;
+    color: $base-color;
+
+  p {
+
+    @include text-styles;
+
+    @media (min-width: #{$small-screen-width}) {
+        &:last-child {
+            margin-bottom: 80px;
+
+        }
+    }
+  }
+
+  h3 {
+    margin-top: 5px;
+
+    @media (min-width: #{$small-screen-width}) {
+      max-width: 70%;
+      margin-left: 0;
+    }
+
+    @media (min-width: #{$medium-screen-width}) {
+      max-width: 90%;
+    }
+  }
+}
+
+// Specifika stilar för .articles
+.articles {
+    width: 90%;
+
+    @media (min-width: #{$small-screen-width}) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+  @media (min-width: #{$medium-screen-width}) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    column-gap: 1rem;
+    // row-gap: 3rem;
+  }
+
+  img {
+
+    @include image-styles;
+
+    @media (min-width: #{$small-screen-width}) {
+        @include image-styles;
+      }
+  
+      @media (min-width: #{$medium-screen-width}) {
+        @include image-styles;
+      }
+  }
+
+
+}
+
+.article-item {
+
+    @media (min-width: #{$small-screen-width}) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+        img {
+
+            @include image-styles;
+
+            @media (min-width: #{$small-screen-width}) {
+                @include image-styles;
+            }
+        
+            @media (min-width: #{$medium-screen-width}) {
+                @include image-styles;
+            }
+        }
+      }

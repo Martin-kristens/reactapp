@@ -1,0 +1,32 @@
+@import 'generics/Header/Header.scss';
+@import 'generics/Header/_navSection.scss';
+@import 'generics/Header/menu';
+@import 'generics/Footer.scss';
+@import 'generics/App.scss';
+@import 'generics/newsAndArticleShowcase.scss';
+@import 'generics/media-content';
+
+
+
+
+@import 'components/HomePage/_aboutCompanySection.scss';
+@import 'components/HomePage/AdviceBoxes.scss';
+@import 'components/HomePage/articleAndNews.scss';
+@import 'components/HomePage/clientsLogo.scss';
+@import 'components/HomePage/FeaturesSection.scss';
+@import 'components/HomePage/meetOurTeam.scss';
+@import 'components/HomePage/OurServicesSection.scss';
+@import 'components/HomePage/ProjectAndCaseStudiesSection.scss';
+@import 'components/HomePage/ShowcaseSection.scss';
+@import 'components/HomePage/SubscribeSection.scss';
+@import 'components/HomePage/testimonialSection';
+@import 'components/HomePage/WhyChooseUsSection.scss';
+
+@import 'components/NewsPage/_newsAndArticles.scss';
+@import 'components/NewsPageDetails/newsDetails';
+@import 'components/NewsPage/oldArticleAndNews.scss';
+
+@import 'components/ContactPage/contact.scss';
+
+
+@import 'components/_notfoundPage.scss';

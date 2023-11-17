@@ -1,0 +1,103 @@
+@import '../../Generics/media-content';
+
+.article-and-news {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .top-row {
+        display: flex;
+        flex-direction: column;
+  
+        @media (min-width: 768px) { 
+          flex-direction: row;      
+          align-items: center;
+          justify-content: space-between;
+        }
+  
+        .section-title {
+          text-align: center;
+  
+          @media (min-width: 768px) {
+            text-align: left;
+  
+            p {
+              font-size: 1.5rem;
+            }
+  
+            h2 {
+              font-size: 3rem;
+            }
+          }              
+        }
+      }
+
+      .article-item {
+        @include image-styles;
+        // @include text-styles;
+      }
+  
+      // .bottom-row {
+        // margin-top: 10px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // max-width: 80%;
+  
+        // @media (min-width: 768px) {
+          
+        //   align-items: center;
+        //   justify-content: space-around;
+        //   gap: 20px;
+        // }
+
+        // @media (min-width: 992px) {
+        //   flex-direction: row;
+        // }
+          // .articles-item {
+          //   @extend .articles-item;
+          //   .business-info {
+          //     @extend .business-info;
+          //   }
+
+          // }
+        // .business-info {
+        //   justify-content:flex-start;
+        //   align-items: center;
+        //   text-decoration: none;
+
+        //   .article-item{
+        //     color: #191919;
+           
+        //     text-align: left;
+
+        //     img{
+        //       object-fit: scale-down;
+        //       width: 100%;
+        //       height: auto;
+        //       margin-bottom: 10px;
+    
+        //       @media (min-width: 768px) {
+        //         object-fit: cover;
+        //         width: 300px;
+        //         height: 250px;
+        //         margin-bottom: 20px;
+    
+        //       }
+    
+        //     }
+        //     p {
+        //       font-size: 1.2em;
+        //     }
+        //   }          
+        // }
+      // }
+  
+      .center-content {
+        margin: 20px 0 30px;
+        text-align: center;
+      }
+    }
+}
