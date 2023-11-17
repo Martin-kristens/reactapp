@@ -2,7 +2,6 @@ import Articles from './Articles'
 import Button from '@components/Generics/Button'
 import SectionTitle from '@components/Generics/SectionTitle'
 import img_dots from '@images/dot-1.png'
-// import ArticleList from '../../News/ArticleList'
 
 
 const ArticleAndNewsSection = () => {
