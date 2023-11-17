@@ -25,7 +25,7 @@ const NewsDetailsOverview = () => {
             <h3>Recent post</h3> 
             <RecentPostsCategory /> 
          </div>
-{/* sätt en gemesamt klassnamn och sen klassnamn i elementen */}
+
          <div className='recent-posts-categories border'>
             <h3>Categories</h3>
             <Categories />

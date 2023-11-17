@@ -34,8 +34,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // align-items: flex-start;
-        // margin-right: 10px;
       }
   
       .section-title {
@@ -71,7 +69,6 @@
           margin-bottom: 20px;
   
           @media (min-width: 768px) {
-            // display: inline-block;
             margin-right: 10px;
           }
         }
