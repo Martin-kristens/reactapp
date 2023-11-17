@@ -18,14 +18,8 @@ const ArticleAndNewsSection = () => {
                 <div className="center-content">
                     <Button type="" text="Browser Team" url="/projects" />
                 </div>
-            </div>
-            {/* <div className="article-list"> */}
-                {/* <GetArticles /> */}
-            {/* </div> */}
-            
-                <Articles />
-                {/* <ArticleList /> */}
-          
+            </div>            
+                <Articles />          
             <div className="center-content">
                 <img src={img_dots} alt="dots on a row" />
             </div>

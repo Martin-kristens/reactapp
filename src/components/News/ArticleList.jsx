@@ -14,7 +14,6 @@ const ArticleList = () => {
                         <p>{article.category}</p>
                         <h3>{article.title}</h3>
                         <p>{article.content}</p>
-                        {/* <p>{article.author}</p> */}
                         <p>{article.published}</p>                           
                     </Link>
                 ))

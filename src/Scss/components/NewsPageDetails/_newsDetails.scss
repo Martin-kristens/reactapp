@@ -27,20 +27,22 @@
     align-self: self-start;
 
     h2 {
-        text-align: center;
         font-size: 2.0em;
-        max-width: 60%;
         margin: 10px 0 20px;
 
         @media (min-width: 992px) {
             font-size: 3.0em;
-            text-align: left;
         }
     }
 
     .news-details-article-sub-headings {
         display: flex;
-        column-gap: 20px;
+        column-gap: 1.5rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
 
         p {
             font-size: 1.5em;           
@@ -93,7 +95,7 @@
     align-self: self-start;
 
     .input-search {
-        width: 100%;
+        width: 90%;
         text-align: center;
     
         input {
@@ -107,7 +109,7 @@
             
             
             @media (min-width: 768px) {
-                width: 70%;    
+                width: 90%;    
             }        
         }
     }
