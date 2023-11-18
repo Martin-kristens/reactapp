@@ -33,7 +33,7 @@ const AboutCompanySection = () => {
             
               <div className="right-content">
                 <Button type="dark" text="Learn More" url="/services" />
-                <Circle url="/services" iconClass="fa-solid fa-play" />
+                <Circle url="/menuBar/services" iconClass="fa-solid fa-play" />
                 <p>Intro Video</p>
               </div>
             </div>

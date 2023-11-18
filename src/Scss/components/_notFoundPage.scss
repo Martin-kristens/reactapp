@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
 
 main {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,18 +9,36 @@ main {
 
     h1 {
         margin-top: 50px;
+        margin-bottom: 50px;
         font-weight: 700;
         font-family: 'Inter', sans-serif;
         color: #e26464;
         text-align: center;
     }
 
-    img {
-        object-fit: cover;
-        width: 50px;
+    .notfound-img {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
 
-        @media (min-width: 768px) {
-            width: auto;
+        img {
+            object-fit: scale-down;
+            width: 100%;
+    
+            @media (min-width: 768px) {
+                width: 33%;
+            }
+        }
+    }
+
+
+    .center-content {
+        margin-bottom: 180px;
+
+        @media (min-width:768px) {
+            margin-top: 3rem;
+            margin-bottom: 476px;
+
         }
     }
 }

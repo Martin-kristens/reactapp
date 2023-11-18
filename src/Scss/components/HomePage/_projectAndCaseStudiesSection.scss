@@ -1,4 +1,5 @@
 
+
 .project-and-case {
   margin-top: 50px;
 
@@ -18,19 +19,18 @@
   
         @media (min-width: 768px) {
           grid-template-columns: 1fr 1fr;
+          justify-content: center;
         }
         
-        .project {          
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: auto 1fr auto;
+        .project { 
           color: #191919;
           text-decoration: none;
           font-size: 1.5rem;
+          height: 40%;
   
           img {
             width: 100%;
-            height: auto;
+            height: 30rem;
             object-fit: scale-down;
           }
   

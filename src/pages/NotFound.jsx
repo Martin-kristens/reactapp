@@ -8,8 +8,13 @@ const NoFound = () => {
     <div className='wrapper'>
         <main>
           <h1>404 PAGE NOT FOUND</h1>
-          <img src={img_astronaut} alt='a picture of an astronaut lost in space' />
-          <Button className="center-content" type="yellow" text="Back Home" url="/" />
+          <div className='notfound-img'>
+            <img src={img_astronaut} alt='a picture of an astronaut lost in space' />
+          </div>
+          <div className="center-content">
+            <Button  type="yellow" text="Back Home" url="/" />
+
+          </div>
         </main>
 
         <FooterBottom />
